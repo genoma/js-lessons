@@ -18,4 +18,19 @@ document.addEventListener('DOMContentLoaded', function(event) {
     katch = undefined;
     console.log(katch);
   }, 1500);
+
+  // Button
+  const button = this.getElementsByClassName('example');
+
+  button[0].addEventListener('mouseenter', function() {
+    this.style.background = 'white';
+    console.log(this);
+  });
+
+  document.addEventListener('click', function(event) {
+    if (!event.target.matches('.example')) return;
+    event.preventDefault;
+    event.target.style.background = 'red';
+    console.log(this);
+  });
 });
