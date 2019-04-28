@@ -1,13 +1,18 @@
 var a = 10;
 var b = 5;
 
+// == type coercion operator
+// === no type coercion
+// && and operator
+// || or operator
+
 // Ternary operator
 var result = a === b ? true : false;
 
+console.log(result);
+
 // == type coercion operator
 // === no type coercion
-
-console.log(result);
 
 if (a === b || a > b) {
   console.log(true);
